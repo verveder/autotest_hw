@@ -3,7 +3,7 @@
 Has two variants: 
 - simple one-module test _(test_simple.py)_ written on the go
   
-- test in _src_ folder _(src\tests\test_oop_style.py)_,
+- test in _src_ folder _(src/tests/test_oop_style.py)_,
 trying to be OOP- and POM-like;
 written after thorough reading of pytest and playwright docs
 with referring to existing autotests
@@ -40,7 +40,7 @@ Web-site in use: https://cloud.ru/ru
   ```
 - To run OOP-like test:
   ```
-  $ pytest src\tests\test_oop_style.py
+  $ pytest src/tests/test_oop_style.py
   ```
 
   
