@@ -36,11 +36,8 @@ Web-site in use: https://cloud.ru/ru
 - To run simple test:
   ```
   $ pytest test_simple.py
-
   ```
 - To run OOP-like test:
   ```
   $ pytest src/tests/test_oop_style.py
-  ```
-
-  
+  ``` 
