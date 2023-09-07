@@ -1,6 +1,8 @@
 import pytest
 from playwright.sync_api import Page, sync_playwright
-from src.pages.pages import HomePage, ServicesPage, ProductPageAPIGW
+from src.pages.home_page import HomePage
+from src.pages.services_page import ServicesPage
+from src.pages.product_page_apigw import ProductPageAPIGW
 
 
 @pytest.fixture(scope='function')

@@ -1,5 +1,7 @@
 from playwright.sync_api import expect
-from src.pages.pages import HomePage, ServicesPage, ProductPageAPIGW
+from src.pages.home_page import HomePage
+from src.pages.services_page import ServicesPage
+from src.pages.product_page_apigw import ProductPageAPIGW
 
 
 class TestNavigationToProductPage:
