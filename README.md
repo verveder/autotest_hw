@@ -5,6 +5,8 @@ Simple UI-tests for QA Bootcamp-23 written to understand the basics of playwrigh
 __test_apigw_pages.py__ in main branch just opens and checks 
 some pages and sections related to API Gateway (product developed by Cloud.ru).
 
+Web-site in use: https://cloud.ru/ru
+
 ## Tools used
 - pytest 7.4.0
 - playwright 1.38.0
@@ -26,8 +28,7 @@ $ pip install -r requirements.txt
 
 ## Running test
 __test_apigw_pages.py__ runs on Chrome in headless mode 
-(to change that, edit tests/conftest.py so that _chromium_page_ fixture has _headless=False_)
-Web-site in use: https://cloud.ru/ru
+(to change that, edit tests/conftest.py so that _chromium_page_ fixture has _headless=False_).
 
 4 tests in total: 3 normal and one designed to fail
 (the last one not marked by @pytest.mark.xfail just to see it how it fails, and not to have it skipped)
