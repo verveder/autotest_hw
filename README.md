@@ -1,17 +1,14 @@
 ## Pytest + Playwright UI-autotest (homework in QA Bootcamp).
 
-Has two variants: 
-- simple one-module test _(test_simple.py)_ written on the go
-  
-- test in _src_ folder _(src/tests/test_oop_style.py)_,
-trying to be OOP- and POM-like;
-written after thorough reading of pytest and playwright docs
-with referring to existing autotests
+Simple UI-tests for QA Bootcamp-23 written to understand the basics of playwright.
+
+__test_apigw_pages.py__ in main branch just opens and checks 
+some pages and sections related to API Gateway (product developed by Cloud.ru).
 
 ## Tools used
 - pytest 7.4.0
-- playwright 1.37.0
-- pytest-playwright 0.4.2
+- playwright 1.38.0
+- pytest-playwright 0.4.3
 
 ## Project setup
 1. Clone the project's repository 
@@ -28,16 +25,14 @@ $ pip install -r requirements.txt
 ```
 
 ## Running test
-Both tests are running on Chrome in headed mode.
+__test_apigw_pages.py__ runs on Chrome in headless mode 
+(to change that, edit tests/conftest.py so that _chromium_page_ fixture has _headless=False_)
 Web-site in use: https://cloud.ru/ru
 
-! Run each test separately.
+4 tests in total: 3 normal and one designed to fail
+(the last one not marked by @pytest.mark.xfail just to see it how it fails, and not to have it skipped)
 
-- To run simple test:
+To run tests: 
   ```
-  $ pytest test_simple.py
-  ```
-- To run OOP-like test:
-  ```
-  $ pytest src/tests/test_oop_style.py
+  $ pytest src/tests/test_apigw_pages.py
   ``` 
